@@ -1,0 +1,147 @@
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 80px; /* Alinhado abaixo do cabeçalho */
+    left: 0;
+    height: calc(100vh - 80px); /* Altura total da janela menos a altura do cabeçalho */
+    width: 220px; /* Definir a largura do menu lateral */
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    margin: 10px 0;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #e7e7e7;
+    border-left: 3px solid #4CAF50;
+}
+
+.menu-lateral ul li a.active {
+    background-color: #e7e7e7;
+    border-left: 3px solid #4CAF50;
+    color: #4CAF50;
+}
+
+/* Espaçamento no conteúdo */
+.content {
+    margin-left: 240px; /* Deixar espaço para o menu lateral */
+    padding: 20px;
+    padding-top: 100px; /* Para evitar sobreposição com o cabeçalho fixo */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td img {
+    width: 50px;
+    height: auto;
+}
+
+/* Botões de ação */
+.btn-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-icon i {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-icon:hover i {
+    color: #4CAF50;
+}
+
+/* Formulário */
+form {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+form input[type="text"], form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nome-cliente-input {
+    width: 300px; /* Altere este valor conforme necessário */
+    padding: 8px; /* Para adicionar mais espaço interno */
+    font-size: 16px; /* Para um tamanho de fonte confortável */
+}
